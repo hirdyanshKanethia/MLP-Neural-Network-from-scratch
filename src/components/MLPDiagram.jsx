@@ -114,8 +114,8 @@ const MLPDiagram = ({ hiddenCount, onHiddenCountChange }) => {
   );
 
   return (
-    <div className="p-6 bg-gray-50">
-      <div className="max-w-4xl mx-auto">
+    <div className="p-4 bg-gray-50">
+      <div className="max-w-2xl mx-auto">
         <div ref={containerRef} className="relative">
           {/* SVG for connections */}
           <svg
@@ -126,7 +126,7 @@ const MLPDiagram = ({ hiddenCount, onHiddenCountChange }) => {
           </svg>
 
           {/* Neural Network Layers */}
-          <div className="flex justify-center gap-24 items-start py-8">
+          <div className="flex justify-center gap-16 items-start py-8">
             {/* Input Layer */}
             <div className="text-center">
               <h3 className="text-lg font-semibold mb-4 text-gray-700">Input Layer</h3>
@@ -167,4 +167,16 @@ const MLPDiagram = ({ hiddenCount, onHiddenCountChange }) => {
   );
 };
 
-export default MLPDiagram;
+// Demo wrapper to show the component
+const App = () => {
+  const [hiddenCount, setHiddenCount] = useState(3);
+  
+  return (
+    <MLPDiagram 
+      hiddenCount={hiddenCount} 
+      onHiddenCountChange={setHiddenCount} 
+    />
+  );
+};
+
+export default App;
