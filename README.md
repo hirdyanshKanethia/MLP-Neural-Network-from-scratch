@@ -1,12 +1,9 @@
-# React + Vite
+# Overview
+This project is a **from-scratch implementation** of a **Multilayer Perceptron (MLP) Neural Network**, built without relying on deep learning libraries. It includes:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **Core Components**: Custom implementations of matrix and NumPy-like operations to handle matrix operations.
+- **Key Algorithms**: Backpropagation, gradient descent, and batch training — the fundamental building blocks behind training neural networks.
+- **Interactive Web App**: A React-based interface (inspired by the [Keras Neural Network Playground](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.41890&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)) to visualize and interact with the neural network in real time.
+- **Use Case**: Demonstrates solving the classic **XOR classification problem**, a canonical example of a non-linearly separable task.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project serves both as an educational resource for understanding how neural networks work under the hood and as an interactive tool for experimenting with different network configurations.
