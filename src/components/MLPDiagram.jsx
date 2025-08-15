@@ -167,16 +167,4 @@ const MLPDiagram = ({ hiddenCount, onHiddenCountChange }) => {
   );
 };
 
-// Demo wrapper to show the component
-const App = () => {
-  const [hiddenCount, setHiddenCount] = useState(3);
-  
-  return (
-    <MLPDiagram 
-      hiddenCount={hiddenCount} 
-      onHiddenCountChange={setHiddenCount} 
-    />
-  );
-};
-
-export default App;
+export default MLPDiagram;
